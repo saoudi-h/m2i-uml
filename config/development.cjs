@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
     app: {
-        port: 5000,
+        port: 5005,
         host: 'localhost',
     },
     db: {
@@ -16,7 +16,7 @@ module.exports = {
     client: {
         url: 'http://localhost:3000'
     },
-    session:{
-        maxMessages:10,
+    session: {
+        maxMessages: 10,
     }
 }
