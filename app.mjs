@@ -6,7 +6,7 @@ import helmet from "helmet";
 import express from "express";
 import config from "config";
 import session from "express-session";
-
+import Customer from "./src/classes/customer.mjs";
 import "./loadEnvironment.mjs";
 
 
@@ -42,6 +42,10 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
+
+const fafa = new Customer('fafa');
+console.log('debut impression');
+fafa.print();
 
 // services
 // app.use("/contact", contact);
