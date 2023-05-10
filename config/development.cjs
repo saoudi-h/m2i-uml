@@ -16,7 +16,7 @@ module.exports = {
     client: {
         url: 'http://localhost:3000'
     },
-    session:{
-        maxMessages:10,
+    session: {
+        maxMessages: 10,
     }
 }
